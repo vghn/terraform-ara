@@ -311,12 +311,12 @@ resource "cloudflare_record" "vault" {
 
 # Vault Instance
 resource "aws_instance" "vault" {
-  instance_type               = "t2.micro"
+  instance_type               = "t3.micro"
   ami                         = data.aws_ami.vault.id
   subnet_id                   = element(module.vpc.public_subnets, 0)
   vpc_security_group_ids      = [aws_security_group.vault.id]
   iam_instance_profile        = aws_iam_instance_profile.vault.name
-  key_name                    = "${aws_key_pair.vgh.key_name}"
+  key_name                    = aws_key_pair.vgh.key_name
   associate_public_ip_address = true
 
   user_data = <<DATA
