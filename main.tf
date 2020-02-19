@@ -31,10 +31,6 @@ provider "null" {
   version = "~> 2.0"
 }
 
-data "aws_region" "current" {}
-
-data "aws_caller_identity" "current" {}
-
 module "notifications" {
   source = "github.com/vghn/terraform-notifications"
 
