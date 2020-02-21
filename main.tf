@@ -52,7 +52,8 @@ module "billing" {
 module "cloudwatch_event_watcher" {
   source = "github.com/vghn/terraform-cloudwatch_event_watcher"
 
-  common_tags = var.common_tags
+  slack_alerts_hook_url = var.slack_alerts_hook_url
+  common_tags           = var.common_tags
 }
 
 module "cloudtrail" {
