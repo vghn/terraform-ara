@@ -1,14 +1,3 @@
-# VGH Ara Terraform
+# Ara
 
-## Overview
-
-Vlad's Ara Terraform Resources
-
-## Contribute
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-## License
-
-Licensed under the Apache License, Version 2.0.
-See [LICENSE](LICENSE) file.
+This module provisions VGH Ara resources.
