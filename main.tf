@@ -102,7 +102,5 @@ module "vault" {
   cloudflare_api_key = var.cloudflare_api_key
   cloudflare_zone_id = var.cloudflare_zone_id
 
-  monitoring_ip = var.monitoring_ip
-
   common_tags = var.common_tags
 }
