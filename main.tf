@@ -49,11 +49,11 @@ module "cloudwatch_event_watcher" {
   common_tags           = var.common_tags
 }
 
-module "cloudtrail" {
-  source = "github.com/vghn/terraform-cloudtrail"
+# module "cloudtrail" {
+#   source = "github.com/vghn/terraform-cloudtrail"
 
-  common_tags = var.common_tags
-}
+#   common_tags = var.common_tags
+# }
 
 # module "vpc" {
 #   source  = "terraform-aws-modules/vpc/aws"
