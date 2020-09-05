@@ -86,14 +86,14 @@ module "vpc" {
   tags = var.common_tags
 }
 
-module "vault" {
-  source = "github.com/vghn/terraform-vault"
+# module "vault" {
+#   source = "github.com/vghn/terraform-vault"
 
-  vpc_id = module.vpc.vpc_id
+#   vpc_id = module.vpc.vpc_id
 
-  cloudflare_email   = var.cloudflare_email
-  cloudflare_api_key = var.cloudflare_api_key
-  cloudflare_zone_id = var.cloudflare_zone_id
+#   cloudflare_email   = var.cloudflare_email
+#   cloudflare_api_key = var.cloudflare_api_key
+#   cloudflare_zone_id = var.cloudflare_zone_id
 
-  common_tags = var.common_tags
-}
+#   common_tags = var.common_tags
+# }
