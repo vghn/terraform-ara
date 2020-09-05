@@ -42,12 +42,12 @@ module "billing" {
   common_tags = var.common_tags
 }
 
-module "cloudwatch_event_watcher" {
-  source = "github.com/vghn/terraform-cloudwatch_event_watcher"
+# module "cloudwatch_event_watcher" {
+#   source = "github.com/vghn/terraform-cloudwatch_event_watcher"
 
-  slack_alerts_hook_url = var.slack_alerts_hook_url
-  common_tags           = var.common_tags
-}
+#   slack_alerts_hook_url = var.slack_alerts_hook_url
+#   common_tags           = var.common_tags
+# }
 
 # module "cloudtrail" {
 #   source = "github.com/vghn/terraform-cloudtrail"
