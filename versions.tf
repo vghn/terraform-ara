@@ -4,7 +4,7 @@ terraform {
       source = "hashicorp/aws"
     }
     cloudflare = {
-      source = "terraform-providers/cloudflare"
+      source = "cloudflare/cloudflare"
     }
     null = {
       source = "hashicorp/null"
