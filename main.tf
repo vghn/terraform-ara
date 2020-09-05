@@ -1,5 +1,4 @@
 terraform {
-  required_version = ">= 0.12"
   backend "remote" {
     organization = "vgh"
     workspaces {
@@ -17,18 +16,12 @@ locals {
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  version = "~> 3.0"
+  region = "us-east-1"
 }
 
 provider "cloudflare" {
-  version = "~> 2.0"
   email   = var.cloudflare_email
   api_key = var.cloudflare_api_key
-}
-
-provider "null" {
-  version = "~> 2.0"
 }
 
 module "notifications" {
